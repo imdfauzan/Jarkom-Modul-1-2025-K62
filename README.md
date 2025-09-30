@@ -5,7 +5,7 @@
 | Nama    | NRP  |
 |---------|------|
 | Imam Mahmud Dalil Fauzan  | 5027241100  |
-| Zaenal Mustofa | 50272410  |
+| Zaenal Mustofa | 5027241018  |
 
 ## Soal Praktikum
 <b>IP Address Host : 10.15.43.32 (Gunakan Jaringan/VPN ITS)</b>
@@ -55,3 +55,4 @@
 4. Agar setiap Client bisa terhubung Internet luar, ketikkan: `echo nameserver 192.168.122.1 > /etc/resolv.conf` pada setiap Client. Untuk membuktikan setiap Client sudah terhubung ke Internet, ketikkan `ping google.com` pada setiap Client.
 5. Agar konfigurasi tidak hilang saat node di restart, ketikkan perintah apa saja yang ingin dilakukan saat device diboot dengan diawali `up`, kemudian ditaruh di Configure pada tiap device.<br> Perhatikan gambar berikut:
     ![menjagakonfigurasi](/img/ss4.png)
+
