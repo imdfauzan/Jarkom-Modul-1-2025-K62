@@ -103,19 +103,19 @@
 8. 
 9. 
 10. Buka Terminal Melkor, lalu ketikkan `ping <IP Eru> -c 100`, akan muncul proses ping hingga 100 kali. Catat hasil akhirnya.
-11. Membuktikan bahwa protokol Telnet mengirimkan nama pengguna dan kata sandi dalam bentuk teks biasa (plaintext)
+11. Membuktikan bahwa protokol Telnet mengirimkan nama pengguna dan kata sandi dalam bentuk teks biasa (plaintext).  
     Langkah 1 (Persiapan di Node Melkor):
 	-  Instal Layanan Telnet
-	  `sudo apt-get update
-	  sudo apt-get install inetutils-telnetd`
+	  <br>`apt-get update`
+	  <br> `apt-get install inetutils-telnetd`
 	-  Aktifkan Layanan Telnet: Setelah instalasi, layanan Telnet harus diaktifkan dalam konfigurasi `inetd`
 	   `nano /etc/inetd.conf`.  
 	   Cari baris yang dimulai dengan #telnet, lalu hapus tanda pagar (#) di awal baris tersebut untuk mengaktifkannya.  
 	-  Mulai Layanan: Setelah mengaktifkan Telnet di file konfigurasi, mulai ulang layanan `inetd` untuk menerapkan perubahan.  
 	   `sudo service openbsd-inetd start`.  
 	-  Buat Akun Pengguna: Buat pengguna baru, misalnya eru_test, yang akan digunakan untuk login.  
-	   `useradd -m eru_test  
-	   passwd eru_test`.  
+	   ```useradd -m eru_test ``` 
+	   <br>```passwd eru_test``` 
 	   
 13. 
 14. 
@@ -147,5 +147,6 @@
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
+
 
 
