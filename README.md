@@ -159,10 +159,7 @@
 	   ![gambar13.1](img/ss13.2.png).
 	 Berikut File pcap nya :  
 	 [jawaban-no-13](src/soal13.pcapng)
-14. 	   
-15. 
-16. 
-17. Buka command yang diberikan `nc 10.15.43.32 3401`, berisi 4 soal:
+14. Buka command yang diberikan `nc 10.15.43.32 3401`, berisi 4 soal:
     - Jawaban Soal 1: `500358`
     <br> - Buka file pcap yang diberikan dengan Wireshark, Lihat jumlah baris yang ada di bar bawah.
     - Jawaban Soal 2: `n1enna:y4v4nn4_k3m3nt4r1`
@@ -173,7 +170,7 @@
     <br> - Analisis format pada credential tersebut.
     Setelah menjawab 4 soal tersebut, saya mendapat flag `Congratulations! Here is your flag: KOMJAR25{Brut3_F0rc3_QCrr6juzbpvaiBVn2DrwHsJxy}`.
     ![jawaban-no14](img/ss14.png).
-18. Buka command yang diberikan `nc 10.15.43.32 3402` :
+15. Buka command yang diberikan `nc 10.15.43.32 3402` :
     - Jawaban Soal 1: `Keyboard`
     <br> - Analisis paket pertama dan kedua, ditemukan:
         ```
@@ -185,11 +182,12 @@
         bstring: USB Keyboard
         ```
     - Jawaban Soal 2: 
-19. Buka command yang diberikan `nc 10.15.43.32 3403`, :
+16. Buka command yang diberikan `nc 10.15.43.32 3403`, :
     - Jawaban Soal 1: `ind@psg420.com:{6r_6e#TfT1p`
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
+
 
 
 
