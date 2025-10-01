@@ -115,7 +115,7 @@
 		-   Masukkan nama pengguna `eru_test` dan kata sandi saat diminta.
 	
 	## Analisis Bukti
-	[Lihat Hasil pcap](soal11.pcapng)
+	[Lihat Hasil pcap](src/soal11.pcapng)
 	
 	- Setelah sesi, filter lalu lintas dengan `telnet`.
 	- Temukan paket yang dikirim dari Eru ke Melkor.
@@ -152,6 +152,7 @@
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
+
 
 
 
