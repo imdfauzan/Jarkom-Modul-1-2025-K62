@@ -149,7 +149,7 @@
 		nc -v -z 192.242.1.2 666
 		```
      -  Hasilnya port 21 dan 80 tertutup, port rahasia 666 terbuka.  
-	    
+	    [Jawaban-no-12](img/ss12.png).
 13. 
 14. 	   
 15. 
@@ -182,6 +182,7 @@
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
+
 
 
 
