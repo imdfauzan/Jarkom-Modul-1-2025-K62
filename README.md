@@ -120,11 +120,41 @@
 	- Setelah sesi, filter lalu lintas dengan `telnet`.
 	- Temukan paket yang dikirim dari Eru ke Melkor.
 	- Pada paket ini, nama pengguna dan kata sandi terlihat jelas di bagian **Telnet Data** sebagai teks biasa. 
+12. Memeriksa port 21, 80, dalam keadaan terbuka dan port rahasia 666 dalam keadaan tertutup dengan menggunakan Netcat(nc).
+	-  Konfigurasi di Node Eru  
+	   Pada konsol Eru, pastikan utilitas Netcat terinstal.
+	   ```
+	   # Perbarui daftar paket
+		apt-get update
 
-13. 	   
-14. 
+		# Instal Netcat
+		apt-get install netcat-openbsd
+       ```
+	-  Konfigurasi di Node Melkor  
+	   Pada konsol Melkor, pastikan layanan untuk port 21 dan 80 sudah terinstal dan berjalan.
+    	```
+		# Instal dan mulai layanan FTP (vsftpd) untuk port 21
+		apt-get install vsftpd
+		service vsftpd start
+
+		# Instal dan mulai layanan web (apache2) untuk port 80
+		apt-get install apache2
+		service apache2 start
+		```
+     -  Proses Pemindaian Port
+		```
+		# Perintah
+		nc -v -z 192.242.1.2 21
+		nc -v -z 192.242.1.2 80
+		nc -v -z 192.242.1.2 666
+		```
+     -  Hasilnya port 21 dan 80 tertutup, port rahasia 666 terbuka.  
+	    
+13. 
+14. 	   
 15. 
-16. Buka command yang diberikan `nc 10.15.43.32 3401`, berisi 4 soal:
+16. 
+17. Buka command yang diberikan `nc 10.15.43.32 3401`, berisi 4 soal:
     - Jawaban Soal 1: `500358`
     <br> - Buka file pcap yang diberikan dengan Wireshark, Lihat jumlah baris yang ada di bar bawah.
     - Jawaban Soal 2: `n1enna:y4v4nn4_k3m3nt4r1`
@@ -135,7 +165,7 @@
     <br> - Analisis format pada credential tersebut.
     Setelah menjawab 4 soal tersebut, saya mendapat flag `Congratulations! Here is your flag: KOMJAR25{Brut3_F0rc3_QCrr6juzbpvaiBVn2DrwHsJxy}`.
     ![jawaban-no14](img/ss14.png).
-17. Buka command yang diberikan `nc 10.15.43.32 3402` :
+18. Buka command yang diberikan `nc 10.15.43.32 3402` :
     - Jawaban Soal 1: `Keyboard`
     <br> - Analisis paket pertama dan kedua, ditemukan:
         ```
@@ -147,11 +177,12 @@
         bstring: USB Keyboard
         ```
     - Jawaban Soal 2: 
-18. Buka command yang diberikan `nc 10.15.43.32 3403`, :
+19. Buka command yang diberikan `nc 10.15.43.32 3403`, :
     - Jawaban Soal 1: `ind@psg420.com:{6r_6e#TfT1p`
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
+
 
 
 
