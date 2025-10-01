@@ -104,25 +104,22 @@
 9. 
 10. Buka Terminal Melkor, lalu ketikkan `ping <IP Eru> -c 100`, akan muncul proses ping hingga 100 kali. Catat hasil akhirnya.
 11. Membuktikan bahwa protokol Telnet mengirimkan nama pengguna dan kata sandi dalam bentuk teks biasa (plaintext).  
-	### Persiapan
 	1.  **Konfigurasi Server Telnet (Node Melkor):**
 	    -   Instal layanan Telnet (`apt-get install inetutils-telnetd`).
 	    -   Aktifkan layanan di `/etc/inetd.conf`.
 	    -   Buat pengguna baru (`useradd -m eru_test` dan `passwd eru_test`).
 	2.  **Konfigurasi Klien Telnet (Node Eru):**
 	    -   Instal klien Telnet (`apt-get install telnet`).
-	
-	### Sesi Telnet dan Penangkap Paket
-	1.  Mulai *capture* Wireshark pada tautan antara Eru dan Melkor.
-	2.  Jalankan `telnet 192.242.1.2` dari konsol Eru.
-	3.  Masukkan nama pengguna `eru_test` dan kata sandi saat diminta.
+		-   Mulai *capture* Wireshark pada tautan antara Eru dan Melkor.
+		-   Jalankan `telnet 192.242.1.2` dari konsol Eru.
+		-   Masukkan nama pengguna `eru_test` dan kata sandi saat diminta.
 	
 	## Analisis Bukti
 	[Lihat Hasil pcap](soal11.pcapng)
 	
-	1.  Setelah sesi, filter lalu lintas dengan `telnet`.
-	2.  Temukan paket yang dikirim dari Eru ke Melkor.
-	3.  Pada paket ini, nama pengguna dan kata sandi terlihat jelas di bagian **Telnet Data** sebagai teks biasa. 
+	- Setelah sesi, filter lalu lintas dengan `telnet`.
+	- Temukan paket yang dikirim dari Eru ke Melkor.
+	- Pada paket ini, nama pengguna dan kata sandi terlihat jelas di bagian **Telnet Data** sebagai teks biasa. 
 
 13. 	   
 14. 
@@ -155,6 +152,7 @@
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
+
 
 
 
