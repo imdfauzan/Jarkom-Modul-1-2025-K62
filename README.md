@@ -152,12 +152,13 @@
 	    ![Jawaban-no-12](img/ss12.png).
 13.  Bagian ini adalah untuk menunjukkan bagaimana SSH mengenkripsi kredensial untuk mengamankan komunikasi.  
 	 - Pada node Eru, layanan SSH server (openssh-server) diinstal dan dikonfigurasi untuk mengizinkan login root.  
-	 img.  
+	   ![gambar13.1](img/ss13.1) 
 	 - Pada node Varda, klien SSH (openssh-client) diinstal.  
 	 - Penangkapan paket Wireshark dimulai pada tautan antara Varda dan Eru.
 	 - Koneksi SSH dilakukan dari Varda ke Eru, dan kredensial login dimasukkan.
+	   ![gambar13.1](img/ss13.2).
 	 Berikut File pcap nya :  
-	 [jawaban-no-13](src/no13.pcap)
+	 [jawaban-no-13](src/no13.pcapng)
 14. 	   
 15. 
 16. 
@@ -189,6 +190,7 @@
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
+
 
 
 
