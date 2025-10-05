@@ -181,25 +181,35 @@
         ```
         bstring: USB Keyboard
         ```
-    - Jawaban Soal 2: 
+    
 16. Buka command yang diberikan `nc 10.15.43.32 3403`, :
     - Jawaban Soal 1: `ind@psg420.com:{6r_6e#TfT1p`
     <br> - Buka file pcap yang diberikan, periksa FTP Protocol dan periksa info di tiap paket. Ditemukan user dan pass pada FTP Protocol bagian bawah. ![jawaban-no16-1](img/ss16.png)
     - Jawaban Soal 2: `5`
     <br> - Ditemukan 5 jenis file: `t.exe`, `r.exe`, `e.exe`, `w.exe`, `q.exe`.
 
+17. Buka command yang diberikan `nc 10.15.43.32 3404`, :
+    - Jawaban Soal 1: `Invoice&MSO-Request.doc`
+    - Jawaban Soal 2: `knr.exe`
+    - Jawaban Soal 3: `749e161661290e8a2d190b1a66469744127bc25bf46e5d0c6f2e835f4b92db18`
+    Setelah menjawab 3 soal tersebut, saya mendapat flag: `Congratulations! Here is your flag: KOMJAR25{M4ster_4n4lyzer_lB3tVA15QDuXya7SQ0ZRVUAbp}`
+    ![jawaban-soal17](img/ss17.png)
 
+18. Buka command yang diberikan `nc 10.15.43.32 3406`, :
+    - Jawaban Soal 1: `2`
+    
+19. Buka command yang diberikan `nc 10.15.43.32 3406`, :
+    - Jawaban Soal 1: `Your LIfe`
+    - Jawaban Soal 2: `1600`
+    - Jawaban Soal 3: `1CWHmuF8dHt7HBGx5RKKLgg9QA2GmE3UyL`
+    <br>Setelah menjawab 3 soal tersebut, saya mendapat flag:
+    `Congratulations! Here is your flag: KOMJAR25{Y0u_4re_J4rk0m_G0d_CpltkYG3pOojo0OXb6H2JREGD}`
+    ![jawaban-soal19](img/ss19.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+20. Buka command yang diberikan `nc 10.15.43.32 3407`, :
+    - Jawaban Soal 1: `TLS`
+    - Jawaban Soal 2: `invest_20.dll`
+    - Jawaban Soal 3: `31cf42b2a7c5c558f44cfc67684cc344c17d4946d3a1e0b2cecb8eb58173cb2f`
+    <br>Setelah menjawab 3 soal tersebut, saya mendapat flag:
+    `Congratulations! Here is your flag: KOMJAR25{B3ware_0f_M4lw4re_2pgZPFPdK38nRTyFlXvhxsMRU}`
+    ![jawaban-soal20](img/ss20.png)
