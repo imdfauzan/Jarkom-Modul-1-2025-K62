@@ -5,7 +5,7 @@
 | Nama    | NRP  |
 |---------|------|
 | Imam Mahmud Dalil Fauzan  | 5027241100  |
-| Zaenal Mustofa | 50272410  |
+| Zaenal Mustofa | 5027241018  |
 
 ## Soal Praktikum
 <b>IP Address Host : 10.15.43.32 (Gunakan Jaringan/VPN ITS)</b>
@@ -213,3 +213,4 @@
     <br>Setelah menjawab 3 soal tersebut, saya mendapat flag:
     `Congratulations! Here is your flag: KOMJAR25{B3ware_0f_M4lw4re_2pgZPFPdK38nRTyFlXvhxsMRU}`
     ![jawaban-soal20](img/ss20.png)
+
